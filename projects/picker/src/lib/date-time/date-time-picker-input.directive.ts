@@ -602,7 +602,7 @@ export class OwlDateTimeInputDirective<T>
                 this._value
                     ? this.dateTimeAdapter.format(
                           this._value,
-                          this.dtPicker.formatString
+                          this.dtPicker ? this.dtPicker.formatString : ''
                       )
                     : ''
             );
